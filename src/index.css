@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #A855F7;
+  --color-primary-dark: #6B21A8;
+  --color-background: #0F172A;
+  --font-sans: "Inter", sans-serif;
+  --font-heading: "Roboto", sans-serif;
+}
+
+body {
+  background-color: var(--color-background);
+  color: white;
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+/* Glassmorphism utility */
+.glass-card {
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+}
+
+/* Neon Button utility */
+.btn-neon {
+  background-color: var(--color-primary-dark);
+  color: white;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.5);
+  border: 1px solid rgba(168, 85, 247, 0.8);
+}
+
+.btn-neon:hover {
+  background-color: var(--color-primary);
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.8), 0 0 40px rgba(168, 85, 247, 0.4);
+}
